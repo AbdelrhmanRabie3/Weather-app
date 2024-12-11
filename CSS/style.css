@@ -13,8 +13,8 @@ body {
 .bg-light-gray {
   background-color: #262936;
 }
-.h-300PX {
-  height: 300px;
+.h-350PX {
+  height: 350px;
 }
 .mt-6 {
   margin-top: 90px;
@@ -267,7 +267,16 @@ textarea::placeholder {
   line-height: normal;
   color: #fff !important;
 }
-
+.location {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 300;
+}
+.contact_ {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 300;
+}
 /********************************* End * Contact *******************************/
 
 /********************************* End * Footer *******************************/
