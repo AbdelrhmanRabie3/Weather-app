@@ -20,11 +20,8 @@ const DayThreeMinTemp = document.getElementById("DayThreeMinTemp");
 const DayThreeStatus = document.getElementById("DayThreeStatus");
 const LocationInput = document.getElementById("LocationInput");
 const Home = document.getElementById("Home");
-const Home1 = document.getElementById("Home1");
-const home_ = document.getElementById("home_");
+const homeLink = document.getElementById("homeLink");
 const Contact = document.getElementById("Contact");
-const Contact1 = document.getElementById("Contact1");
-const contact_ = document.getElementById("contact_");
 
 const Locat = "Cairo";
 const TodayCard = {
@@ -64,37 +61,22 @@ if (Home) {
     location.href = "../index.html";
   });
 }
-if (Home1) {
-  Home1.addEventListener("click", function () {
-    location.href = "../index.html";
-  });
-}
 
 if (Contact) {
   Contact.addEventListener("click", function () {
     location.href = "pages/contact.html";
   });
 }
-if (Contact1) {
-  Contact1.addEventListener("click", function () {
-    location.href = "pages/contact.html";
-  });
-}
 
-if (home_) {
-  home_.addEventListener("click", function () {
+if (homeLink) {
+  homeLink.addEventListener("click", function () {
     location.href = "../index.html";
-  });
-}
-if (contact_) {
-  contact_.addEventListener("click", function () {
-    location.href = "pages/contact.html";
   });
 }
 
 async function getCurrentWeather(Locat) {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=78210d6e91144662a31160055240912&q=${Locat}&days=3&aqi=no&alerts=no`,
+    `https://api.weatherapi.com/v1/forecast.json?key=78210d6e91144662a31160055240912&q=${Locat}&days=3&aqi=no&alerts=no`,
     {
       headers: { "Content-Type": "application/json" },
     }
